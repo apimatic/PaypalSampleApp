@@ -1,4 +1,4 @@
-# Spotify Web API Sample Application
+# Music DNA card generator
 
 A personalized Music DNA card generator that analyzes your Spotify listening history to reveal your audio personality, top genres, radar chart of audio features, and hidden gem artists — all in one shareable card.
 
@@ -59,7 +59,7 @@ The results are rendered into a visually rich card component. The radar chart is
 
 ## AI Generation Details
 
-This application was generated using **Claude Code** with the **APIMatic MCP Server** context plugin for the Spotify Web API SDK.
+This application was generated using **Claude Code** with the context plugin for the Spotify Web API SDK.
 
 ### Prompt Used
 
@@ -82,7 +82,7 @@ This application was generated using **Claude Code** with the **APIMatic MCP Ser
 | API Client | [APIMatic-generated Spotify Web API SDK](https://spotify-poc-apimatic.pages.dev/#/typescript/quick-start/overview) (`spotify-apimatic-sdk`) |
 | Charts | Chart.js + react-chartjs-2 |
 | Image Export | html2canvas |
-| AI Assistant | Claude Code with APIMatic MCP Server |
+| AI Assistant | Claude Code with APIMatic context plugin |
 
 ## Resources
 
