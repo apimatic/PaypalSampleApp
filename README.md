@@ -43,7 +43,7 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser. Enter your Spotify API credentials (Client ID, Client Secret, and Redirect URI) on the home page, then click **Login with Spotify** to generate your Music DNA card.
+Open [http://127.0.0.1:3000](http://127.0.0.1:3000) in your browser. Enter your Spotify API credentials (Client ID, Client Secret, and Redirect URI) on the home page, then click **Login with Spotify** to generate your Music DNA card.
 
 ![Credentials Form](docs/images/update_credentials_page.png)
 
