@@ -2,11 +2,15 @@ import { NextRequest } from "next/server";
 import type { SpotifyCredentials } from "./spotify";
 
 export function getCredentials(request: NextRequest): SpotifyCredentials | null {
-  const clientId = request.cookies.get("sp_client_id")?.value;
-  const clientSecret = request.cookies.get("sp_client_secret")?.value;
-  const redirectUri = request.cookies.get("sp_redirect_uri")?.value;
+  const rawId = request.cookies.get("sp_client_id")?.value;
+  const rawSecret = request.cookies.get("sp_client_secret")?.value;
+  const rawUri = request.cookies.get("sp_redirect_uri")?.value;
 
-  if (!clientId || !clientSecret || !redirectUri) return null;
+  if (!rawId || !rawSecret || !rawUri) return null;
 
-  return { clientId, clientSecret, redirectUri };
+  return {
+    clientId: decodeURIComponent(rawId),
+    clientSecret: decodeURIComponent(rawSecret),
+    redirectUri: decodeURIComponent(rawUri),
+  };
 }
