@@ -18,6 +18,8 @@ This application was generated using **Claude Code** with the context plugin for
 
 ### Prompt Used
 
+> Create a web app where users log in with Spotify, fetch their top artists and top tracks, then fetch audio features for those tracks. Analyze the data to calculate average audio features, find the most obscure artist, determine the top 5 genres, and generate a "music personality" label based on the averages. Render all of this in a visually appealing DNA card with a radar chart, top genres, most obscure artist, and personality label, and include a button to download or share the card. Use your own branding and logo; do not include Spotify logos anywhere.
+
 ![Claude Code Prompt](docs/images/prompt.png)
 
 ### Time Investment
